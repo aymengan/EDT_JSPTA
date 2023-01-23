@@ -1,2 +1,2 @@
 # EDT_JSPTA
-Experimental Digital Twin of a Job Shop with Transportation Agents
+This repository contains an Experimental Digital Twin (EDT) of a Job Shop with Transportation Agents (JSPTA) present in flexible manufacturing systems. Multiple methods for solving the JSPTA were implemented. i.e the shortest processing time and the longest processing time Priority Sispatching Rules (PDR) as well as an adapted Reinforcement Learning (RL) approach from the current State of the Art (SotA). 
