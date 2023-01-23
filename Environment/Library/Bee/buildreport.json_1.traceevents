@@ -1,0 +1,575 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1667949785951832, "dur": 572195, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1667949785951846, "dur": 2059, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1667949785953907, "dur": 48209, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1667949786002120, "dur": 321579, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1667949786323701, "dur": 199093, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1667949786522796, "dur": 1230, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1667949786524490, "dur": 14, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1667949786155715, "dur": 147689, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1667949786157103, "dur": 59210, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1667949786280995, "dur": 6329, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1667949786287328, "dur": 16065, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1667949786288300, "dur": 13790, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1667949786309594, "dur": 1802, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1667949786308432, "dur": 2996, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1667949786524586, "dur": 288, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1667949786373188, "dur":2193, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786375393, "dur":1527, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1667949786376985, "dur":234, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1667949786377221, "dur":617, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1667949786377920, "dur":896, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786378816, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478540, "dur":282, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478822, "dur":16, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478838, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478842, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478851, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478855, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478863, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478867, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478875, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478878, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478887, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478890, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478899, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478903, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478911, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478915, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478924, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478944, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786478991, "dur":25945, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1667949786378060, "dur":766, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786378829, "dur":4994, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786383851, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1667949786383853, "dur":157, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786384017, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1667949786384022, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786388409, "dur":2684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1667949786391096, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1667949786391197, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786391311, "dur":2819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1667949786394210, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1667949786394302, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786394313, "dur":1642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1667949786396016, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1667949786396111, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786403272, "dur":11737, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1667949786415130, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786415229, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786415247, "dur":3150, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786418479, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786418575, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786418590, "dur":3191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786421856, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786421955, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786421970, "dur":3066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786425109, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786425215, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786425227, "dur":3177, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786428477, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786428570, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786428582, "dur":2998, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786431653, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786431727, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786431742, "dur":2368, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786434198, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786434295, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786434308, "dur":2691, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786437081, "dur":378, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786437466, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786437483, "dur":3730, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786441286, "dur":232, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786441522, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786441562, "dur":2821, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786444452, "dur":468, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.ML-Agents.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786444923, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786444933, "dur":2672, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.ML-Agents.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786447690, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Burst.Cecil.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786447764, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786447774, "dur":2919, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Burst.Cecil.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786450765, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786450838, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786450943, "dur":3070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786454093, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.IO.Abstractions.TestingHelpers.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786454180, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786454191, "dur":2805, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.IO.Abstractions.TestingHelpers.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786457097, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786457181, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786457196, "dur":6854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786464120, "dur":12663, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786476790, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1667949786476965, "dur":1472, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":1, "ts":1667949786478491, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":1, "ts":1667949786478492, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786378201, "dur":635, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786378837, "dur":5024, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786383862, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1667949786384020, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786387071, "dur":4607, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1667949786391770, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1667949786391836, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786392152, "dur":2660, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1667949786394930, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":2, "ts":1667949786395033, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786395060, "dur":11564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":2, "ts":1667949786406725, "dur":167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786406897, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786406908, "dur":3354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786410365, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786410458, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786410472, "dur":4239, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786414811, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786414906, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786414923, "dur":3681, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786418678, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786418765, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786418778, "dur":2744, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786421608, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786421687, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786421701, "dur":3286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786425071, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786425155, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786425164, "dur":3153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786428401, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786428884, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786428899, "dur":2842, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786431826, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786431906, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786431921, "dur":2205, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786434207, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786434295, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786434308, "dur":2581, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786436983, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786437072, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786437113, "dur":3485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786440685, "dur":238, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786440930, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786440945, "dur":2817, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786443839, "dur":256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786444101, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786444112, "dur":2846, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786447046, "dur":589, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786447642, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786447656, "dur":3072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786450800, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786450944, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786450956, "dur":2904, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786453933, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786453999, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786454007, "dur":3044, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786457139, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786457234, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786457248, "dur":2894, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786460227, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786460335, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786460348, "dur":3221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786463657, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Google.Protobuf.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786463740, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786463757, "dur":3132, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Google.Protobuf.dll" }}
+,{ "pid":12345, "tid":2, "ts":1667949786466964, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1667949786467055, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786467193, "dur":3148, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1667949786470392, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/level0.resS" }}
+,{ "pid":12345, "tid":2, "ts":1667949786470441, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1667949786470447, "dur":5029, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/level0.resS" }}
+,{ "pid":12345, "tid":2, "ts":1667949786475545, "dur":2978, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786378353, "dur":499, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786378852, "dur":4993, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786383850, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1667949786383993, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786386684, "dur":4431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1667949786391196, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1667949786391288, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786391420, "dur":3008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1667949786394797, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786394892, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786395304, "dur":21337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786416732, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786416820, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786416835, "dur":4844, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786421764, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786421848, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786421861, "dur":2916, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786424848, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786424950, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786424963, "dur":2802, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786427847, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786427937, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786427953, "dur":2338, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786430369, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786430458, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786430476, "dur":1733, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786432287, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786432397, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786432413, "dur":2400, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786434887, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786434987, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786434996, "dur":2514, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786437583, "dur":746, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786438332, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786438339, "dur":2745, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786441157, "dur":228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786441395, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786441403, "dur":2941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786444412, "dur":223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786444643, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786444657, "dur":2681, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786447401, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786447489, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786447503, "dur":2493, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786450471, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786450588, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786450600, "dur":6317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786456990, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786457090, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786457102, "dur":3588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786460776, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786460877, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786460893, "dur":9262, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1667949786470207, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/resources.assets" }}
+,{ "pid":12345, "tid":3, "ts":1667949786470262, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1667949786470276, "dur":6724, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/resources.assets" }}
+,{ "pid":12345, "tid":3, "ts":1667949786477048, "dur":1488, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786378491, "dur":408, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786378899, "dur":4948, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786383852, "dur":159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1667949786384016, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786386845, "dur":4258, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1667949786391183, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1667949786391269, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786391418, "dur":2761, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1667949786394262, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":4, "ts":1667949786394357, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786394373, "dur":1588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":4, "ts":1667949786396025, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786396119, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786403374, "dur":2866, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786406320, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786406416, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786406431, "dur":3955, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786410457, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786410555, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786410569, "dur":4325, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786414978, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786415124, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786415141, "dur":3190, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786418407, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786418500, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786418552, "dur":2917, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786421544, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786421672, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786421689, "dur":2817, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786424598, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786424688, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786424707, "dur":2788, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786427577, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786427668, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786427699, "dur":1937, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786429714, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786429798, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786429813, "dur":2206, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786432113, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786432194, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786432207, "dur":2613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786434894, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786434961, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786434971, "dur":2405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786437456, "dur":639, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786438101, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786438113, "dur":2600, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786440795, "dur":217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786441020, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786441035, "dur":2973, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786444089, "dur":390, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786444487, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786444501, "dur":2953, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786447538, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786447622, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786447634, "dur":2523, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786450234, "dur":249, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786450490, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786450505, "dur":2629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786453213, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786453292, "dur":21, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786453354, "dur":4944, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786458389, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786458462, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786458469, "dur":4582, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786463125, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786463199, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786463216, "dur":3948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1667949786467451, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1667949786467581, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786467597, "dur":7267, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1667949786474952, "dur":270, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1667949786475228, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1667949786475242, "dur":1532, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1667949786476846, "dur":1672, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786378625, "dur":314, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786378940, "dur":4923, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786383863, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1667949786384018, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786387373, "dur":3866, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1667949786391307, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1667949786391402, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786391790, "dur":2919, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1667949786394791, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786394893, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786395329, "dur":10776, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786406216, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786406348, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786406364, "dur":3553, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786410541, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786410650, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786410715, "dur":3387, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786414185, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786414266, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786414277, "dur":1812, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786416155, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786416249, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786416266, "dur":2381, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786418732, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786418819, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786418834, "dur":3188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786422097, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786422181, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786422189, "dur":2780, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786425057, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786425138, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786425155, "dur":3243, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786428478, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786428571, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786428582, "dur":2842, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786431503, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786431576, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786431587, "dur":2264, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786433929, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786434019, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786434032, "dur":2677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786436797, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786436893, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786436911, "dur":3655, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786440647, "dur":640, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786441295, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786441309, "dur":2794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786444185, "dur":245, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786444468, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786444483, "dur":2404, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786446967, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786447124, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786447165, "dur":2719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786449963, "dur":940, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Barracuda.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786450953, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786450964, "dur":3040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Barracuda.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786454089, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786454185, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786454199, "dur":2758, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786457049, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786457126, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786457141, "dur":11824, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":5, "ts":1667949786469052, "dur":310, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":5, "ts":1667949786469370, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1667949786469392, "dur":5737, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":5, "ts":1667949786475199, "dur":3339, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786378733, "dur":244, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786378978, "dur":4882, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786383861, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1667949786384023, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786387634, "dur":3486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1667949786391195, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1667949786391299, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786391345, "dur":3015, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1667949786394458, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":6, "ts":1667949786394582, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786394597, "dur":1821, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":6, "ts":1667949786396469, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786396537, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786403289, "dur":2960, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786406345, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786406463, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786406481, "dur":3329, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786409905, "dur":178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786410092, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786410118, "dur":3276, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786413494, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786413631, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786413657, "dur":1945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786415678, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786415775, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786415785, "dur":2877, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786418742, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786418820, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786418832, "dur":3056, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786421964, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786422062, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786422072, "dur":3143, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786425303, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786425408, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786425422, "dur":3178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786428676, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786428769, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786428784, "dur":2832, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786431693, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786431769, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786431780, "dur":2430, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786434296, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786434384, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786434400, "dur":2516, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786437002, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786437107, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786437116, "dur":3539, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786440746, "dur":256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786441011, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786441024, "dur":3025, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786444117, "dur":235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786444360, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786444370, "dur":2672, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786447126, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786447223, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786447237, "dur":2989, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786450313, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786450456, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786450468, "dur":2708, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786453251, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786453374, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786453391, "dur":3256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786456716, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Interactive.Async.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786456802, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786456819, "dur":2881, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Interactive.Async.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786459784, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786459884, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786459904, "dur":3190, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786463176, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Grpc.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786463287, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786463308, "dur":3308, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Grpc.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1667949786466695, "dur":744, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":6, "ts":1667949786467449, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786468607, "dur":5723, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":6, "ts":1667949786474423, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1667949786474502, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1667949786474546, "dur":2071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1667949786476691, "dur":1847, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786378877, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786378877, "dur":4985, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786383863, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1667949786384000, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786386799, "dur":4379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1667949786391258, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1667949786391344, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786392199, "dur":2667, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1667949786394940, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS.exe" }}
+,{ "pid":12345, "tid":7, "ts":1667949786395026, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786395037, "dur":10834, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS.exe" }}
+,{ "pid":12345, "tid":7, "ts":1667949786405973, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786406092, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786406212, "dur":3691, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786409983, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786410098, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786410118, "dur":3614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786414069, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786414200, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786414218, "dur":3964, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786418269, "dur":551, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786418828, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786418843, "dur":2913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786421826, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786421907, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786421921, "dur":2890, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786424899, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786424983, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786424993, "dur":3315, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786428403, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786428544, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786428560, "dur":2290, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786430930, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786431028, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786431072, "dur":2072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786433225, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786433308, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786433323, "dur":3416, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786436820, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786436912, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786436927, "dur":3539, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786440545, "dur":376, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786440928, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786440945, "dur":2623, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786443619, "dur":199, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786443822, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786443834, "dur":2064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786445976, "dur":926, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786446909, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786446926, "dur":3022, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786450045, "dur":240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Barracuda.BurstBLAS.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786450293, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786450311, "dur":2839, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Barracuda.BurstBLAS.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786453240, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786453343, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786453366, "dur":3230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786456801, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786456904, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786456954, "dur":3091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786460188, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786460285, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786460300, "dur":4250, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786464627, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Plugins/x86_64/grpc_csharp_ext.x64.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786464771, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786466005, "dur":4355, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Plugins/x86_64/grpc_csharp_ext.x64.dll" }}
+,{ "pid":12345, "tid":7, "ts":1667949786470418, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1667949786470469, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1667949786470475, "dur":5284, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1667949786475812, "dur":2707, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786379095, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786379095, "dur":4751, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786383850, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1667949786383979, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786387019, "dur":4288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1667949786391387, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1667949786391483, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786391808, "dur":2922, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1667949786394809, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786394910, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786394922, "dur":43787, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786438797, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786438936, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786438949, "dur":2397, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786441419, "dur":315, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786441744, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786441752, "dur":2939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786444777, "dur":257, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.ML-Agents.CommunicatorObjects.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786445037, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786445044, "dur":2581, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.ML-Agents.CommunicatorObjects.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786447709, "dur":413, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Barracuda.ONNX.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786448129, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786448141, "dur":2558, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Unity.Barracuda.ONNX.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786450764, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786450838, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786450929, "dur":2294, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786453287, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786453396, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786453406, "dur":2899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786456395, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.IO.Abstractions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786456526, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786456539, "dur":3518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.IO.Abstractions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786460141, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786460231, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786460245, "dur":3458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786463774, "dur":303, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786464083, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786464098, "dur":3646, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":8, "ts":1667949786467844, "dur":318, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":8, "ts":1667949786468170, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786468188, "dur":6611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":8, "ts":1667949786474883, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1667949786474986, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1667949786475019, "dur":1798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lfcas/Documents/Thesis Paper/windowsbuilds/9x3x2/ins_4/FAS_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1667949786476894, "dur":1643, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1667949786507282, "dur":2400, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1667949786524959, "dur": 1144, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1667949786524477, "dur": 1651, "ph": "X", "name": "Write chrome-trace events", "args": {} },
