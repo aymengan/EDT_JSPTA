@@ -10,13 +10,14 @@ This repository contains an Experimental Digital Twin (EDT) of a Job Shop with T
 
 ## Tools and Methods Used
 The EDT was created using the [Unity](https://unity.com/) simulator and the [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents). 
+- Main FMS components done through Unity Prefabs. 
 - NavMesh package. 
 - [Taillard](https://doi.org/10.1016/0377-2217(93)90182-M) JSP Generation
 - PDRs - SPT and LPT (explain)
 - [Learning to Dispatch](https://doi.org/10.48550/arXiv.2010.12367) Adjustments were made
 
 ## EDT Components
-- **simple components (image + behavior)**
+- **simple components (image + behavior)** + aesthetics were not taken into account.
 - Shop Floor
 - Geofences
 - Delivery Stations
