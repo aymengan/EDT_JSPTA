@@ -10,7 +10,6 @@ This repository contains an Experimental Digital Twin (EDT) of a Job Shop with T
 
 ## Tools and Methods Used
 The EDT was created using the [Unity](https://unity.com/) simulator and the [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents). 
-- The agents and PDRs used within the enviroment solved for the system's AGV task allocation. 
 - NavMesh package. 
 - [Taillard](https://doi.org/10.1016/0377-2217(93)90182-M) JSP Generation
 - PDRs - SPT and LPT (explain)
