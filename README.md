@@ -7,7 +7,6 @@ Accompanying code for "Experimental Digital Twin for Job Shops with Transportati
 - [Introduction](#intro)  
 - [Installation](#install)
 - [Usage](#usage)
-- [Result Reproduction](#repro)
 - [Design and Customization](#dc)
    
 
@@ -29,42 +28,19 @@ With a focus on the makespan, our findings reveal that the neural combinatorial 
 <a name="install"/>
 
 ## Installation
-
-
 This repository contains an Experimental Digital Twin (EDT) of a Job Shop with Transportation Agents (JSPTA) present in flexible manufacturing systems.
 The following software is required:
 - [Unity Editor 2021.3.9f1](https://unity.com/)
 - [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents)
 
+To properly setup the environment you will need to follow the next steps:
+1. Install the [Unity Editor 2021.3.9f1](https://unity.com/)
+2. Clone the repository to using git clone https://github.com/aymengan/EDT_JSPTA.git
+3. Open the Environment folder of this repository with the Unity editor
+4. Setup a python environment with [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents)
 
+Note: Given size limitations the packages contained within Unity project were removed, nonetheless, once it is opened with Unity the packages will download automatically. 
 
-
-
-## EDT Components
-- **simple components (image + behavior)** + aesthetics were not taken into account.
-- Shop Floor
-- Geofences
-- Delivery Stations
-- Workstations 
-- Products
-- AGVs
-- Full episode SHOW
-
-## Training Parameters
-- configuration file configuration.yaml 
-- executable
-- speed changed due to NavMesh
-- Duplicates of the same system
-- 4 environments running in parallel 
-- Hardware used
+<a name="usage"/>
 
 ## Usage
-- Shop Floor Area
-- Add Geofences
-- Add Delivery Station
-- Add Workstations
-- Add Products
-- Add AGV
-- Fix Settings (Values and IDs)
-- TRAIN (Training Mode) reference ML agents Toolkit (.exe creation and normal running)
-- Test (use)
