@@ -27,13 +27,6 @@ With a focus on the makespan, our findings reveal that the neural combinatorial 
 </p>
 
 
-
-<a name="install"/>
-
-
-
-
-
 ##Installation
 
 
