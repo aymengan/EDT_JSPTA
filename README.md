@@ -22,7 +22,7 @@ This research aims to address this gap by designing an Experimental Digital Twin
 With a focus on the makespan, our findings reveal that the neural combinatorial approach outperformed the other PDRs, even when tested on unseen shop floor layouts. Furthermore, our results call for further investigation of multi-agent collaboration and layout optimization. Our EDT is a first step towards creating self-adaptive manufacturing systems and testing potential optimization scenarios before transferring them to real-world applications.
 
 <p align="center">
-   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Layout%203.gif" width="600" height="340"/>
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Layout%203.gif" width="600" height="340" title="s"/>
 </p>
 
 <a name="install"/>
@@ -35,8 +35,8 @@ The following software is required:
 
 To properly setup the environment you will need to follow the next steps:
 1. Install the [Unity Editor 2021.3.9f1](https://unity.com/)
-2. Clone the repository to using git clone https://github.com/aymengan/EDT_JSPTA.git
-3. Open the Environment folder of this repository with the Unity editor
+2. Clone the repository using git clone https://github.com/aymengan/EDT_JSPTA.git
+3. Open the Environment folder of this repository as a project with the Unity editor
 4. Setup a python environment with [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents)
 
 Note: Given size limitations the packages contained within Unity project were removed, nonetheless, once it is opened with Unity the packages will download automatically. 
@@ -44,3 +44,7 @@ Note: Given size limitations the packages contained within Unity project were re
 <a name="usage"/>
 
 ## Usage
+
+The repository includes one sample of the JSPTA configurations used within the original work. The configuration is refered to 6x3x2_L3, meaning the third layout configuration of the JSPTA problem with 6 jobs, 3 workstations and 2 agents. To implement costum configurations please refer to [Desing and Customization](#dc).
+
+### All the configurations used with the original Paper
