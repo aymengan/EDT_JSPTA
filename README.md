@@ -14,10 +14,6 @@ Accompanying code for "Experimental Digital Twin for Job Shops with Transportati
 <a name="intro"/>
 
 ## Introduction
-<p align="center">
-   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Layout%203.gif" width="600" height="340"/>
-</p>
-
 Production scheduling in multi-stage manufacturing environments is subject to combinatorial optimization problems, such as the Job Shop Problem (JSP). The transportation of materials when assigned to mobile agents, such as Automated Guided Vehicles (AGVs), results in a Job Shop Problem with Transportation Agents (JSPTA). The transportation tasks require routing the AGVs within the physical space of the production environment. Efficient scheduling of production and material flow is thus crucial to enable flexible manufacturing systems.
 
 Neural combinatorial optimization has evolved to solve combinatorial optimization problems using deep Reinforcement Learning (RL). The key aim is to learn robust heuristics that tackle the trade-off of optimality versus time complexity and scale better to dynamic changes in the problem. The present simulation environments used to train RL agents for solving the JSPTA lack accessibility (e.g. use of proprietary software), configurability (e.g. changing shop floor layout), and extendability (e.g. implementing other RL methods).
@@ -26,16 +22,22 @@ This research aims to address this gap by designing an Experimental Digital Twin
 
 With a focus on the makespan, our findings reveal that the neural combinatorial approach outperformed the other PDRs, even when tested on unseen shop floor layouts. Furthermore, our results call for further investigation of multi-agent collaboration and layout optimization. Our EDT is a first step towards creating self-adaptive manufacturing systems and testing potential optimization scenarios before transferring them to real-world applications.
 
+<p align="center">
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Layout%203.gif" width="600" height="340"/>
+</p>
 
+
+
+<a name="install"/>
+
+##Installation
 
 This repository contains an Experimental Digital Twin (EDT) of a Job Shop with Transportation Agents (JSPTA) present in flexible manufacturing systems.
-- What is an FMS and its components (importance of Transportation)
-- Target Criteria makespan
-- Highly configurable EDT, the creation of arbitrary configurations
-- Primary intention was to be RL training environment to test RL solutions for the AGV task allocation
-- Simple PDRs implemented 
-- Current SotA approach adapted
-- Intention to be a JSPTA solution tester and developer tool
+The following software and libraries are required:
+- [Unity 2021.3.9f1]()
+
+
+
 
 ## Tools and Methods Used
 The EDT was created using the [Unity](https://unity.com/) simulator and the [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents). 
