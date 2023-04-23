@@ -22,8 +22,10 @@ This research aims to address this gap by designing an Experimental Digital Twin
 With a focus on the makespan, our findings reveal that the neural combinatorial approach outperformed the other PDRs, even when tested on unseen shop floor layouts. Furthermore, our results call for further investigation of multi-agent collaboration and layout optimization. Our EDT is a first step towards creating self-adaptive manufacturing systems and testing potential optimization scenarios before transferring them to real-world applications.
 
 <p align="center">
-   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Layout%203.gif" width="600" height="340"/>
-   <figcaption align="center">{{ include.description }}</figcaption>
+   <figure class="image">
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Layout%203.gif" width="600" height="340" alt="{{ include.description }}">
+   <figcaption>{{ include.description }}</figcaption>
+   </figure>
 </p>
 
 <a name="install"/>
