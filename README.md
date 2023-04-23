@@ -27,16 +27,16 @@ With a focus on the makespan, our findings reveal that the neural combinatorial 
 </p>
 
 
-</a>
-
 
 <a name="install"/>
+
+
+
+
 
 ##Installation
 
 
-<a name="w"/>
-## SAS
 
 ## asas
 
