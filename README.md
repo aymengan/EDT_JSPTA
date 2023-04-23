@@ -5,12 +5,13 @@ Accompanying code for "Experimental Digital Twin for Job Shops with Transportati
 
 ##### Contents  
 [Introduction](#intro)  
-[Emphasis](#emphasis)  
+[Installation](#install)
+[Usage](#usage)
+[Result Reproduction](#repro)
+[Design and Customization](#dc)
    
 
-
 <a name="intro"/>
-
 ## Introduction
 
 Production scheduling in multi-stage manufacturing environments is subject to combinatorial optimization problems, such as the Job Shop Problem (JSP). The transportation of materials when assigned to mobile agents, such as Automated Guided Vehicles (AGVs), results in a Job Shop Problem with Transportation Agents (JSPTA). The transportation tasks require routing the AGVs within the physical space of the production environment. Efficient scheduling of production and material flow is thus crucial to enable flexible manufacturing systems.
