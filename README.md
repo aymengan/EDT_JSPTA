@@ -28,25 +28,22 @@ With a focus on the makespan, our findings reveal that the neural combinatorial 
 
 
 
-<b name="install"/>
+
+
+<a name="install"/>
 
 
 ##Installation
 
+
 This repository contains an Experimental Digital Twin (EDT) of a Job Shop with Transportation Agents (JSPTA) present in flexible manufacturing systems.
-The following software and libraries are required:
-- [Unity 2021.3.9f1]()
+The following software is required:
+- [Unity Editor 2021.3.9f1](https://unity.com/)
+- [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents)
 
 
 
 
-## Tools and Methods Used
-The EDT was created using the [Unity](https://unity.com/) simulator and the [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents). 
-- Main FMS components done through Unity Prefabs. 
-- NavMesh package. 
-- [Taillard](https://doi.org/10.1016/0377-2217(93)90182-M) JSP Generation
-- PDRs - SPT and LPT (explain)
-- [Learning to Dispatch](https://doi.org/10.48550/arXiv.2010.12367) Adjustments were made
 
 ## EDT Components
 - **simple components (image + behavior)** + aesthetics were not taken into account.
