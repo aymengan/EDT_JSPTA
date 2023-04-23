@@ -28,7 +28,7 @@ With a focus on the makespan, our findings reveal that the neural combinatorial 
 
 
 
-<a name="install"/>
+<b name="install"/>
 
 
 ##Installation
