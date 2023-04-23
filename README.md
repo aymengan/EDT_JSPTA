@@ -26,12 +26,9 @@ With a focus on the makespan, our findings reveal that the neural combinatorial 
    <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Layout%203.gif" width="600" height="340"/>
 </p>
 
+<a name="install"/>
 
-##Installation
-
-
-
-## asas
+## Installation
 
 
 This repository contains an Experimental Digital Twin (EDT) of a Job Shop with Transportation Agents (JSPTA) present in flexible manufacturing systems.
