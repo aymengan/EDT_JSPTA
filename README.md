@@ -4,15 +4,11 @@
 Accompanying code for "Experimental Digital Twin for Job Shops with Transportation Agents" Research Paper. 
 
 ##### Contents  
-[Introduction](#intro)  
-
-[Installation](#install)
-
-[Usage](#usage)
-
-[Result Reproduction](#repro)
-
-[Design and Customization](#dc)
+- [Introduction](#intro)  
+- [Installation](#install)
+- [Usage](#usage)
+- [Result Reproduction](#repro)
+- [Design and Customization](#dc)
    
 
 <a name="intro"/>
