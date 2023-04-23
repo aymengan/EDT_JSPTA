@@ -23,7 +23,7 @@ With a focus on the makespan, our findings reveal that the neural combinatorial 
 
 <p align="center">
    <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Layout%203.gif" width="600" height="340"/>
-   <em>image_caption</em>
+   <figcaption>{{ include.description }}</figcaption>
 </p>
 
 <a name="install"/>
