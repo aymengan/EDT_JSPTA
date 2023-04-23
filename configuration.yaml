@@ -43,9 +43,9 @@ behaviors:
     self_play: null
     behavioral_cloning: null
 env_settings:
-  env_path: C:\Users\diego\Documents\Pipe_parasite\6x3x2_L3\ins_1\FAS.exe
+  env_path: C:\Users\diego\Documents\Pipe_parasite\6x3x2_L2\ins_3\FAS.exe
   env_args: null
-  base_port: 5010
+  base_port: 5030
   num_envs: 4
   num_areas: 1
   seed: -1
@@ -62,11 +62,11 @@ engine_settings:
   no_graphics: true
 environment_parameters: null
 checkpoint_settings:
-  run_id: 6x3x2_L3_ins_1
+  run_id: 6x3x2_L2_ins_3
   initialize_from: null
   load_model: false
   resume: false
-  force: true
+  force: false
   train_model: false
   inference: false
   results_dir: results
