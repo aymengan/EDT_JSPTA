@@ -75,7 +75,14 @@ The resulting training command will look something like this:
 mlagents-learn "./configuration.yaml" --run-id sample_JSPTA --env="./path_to_executable" --no-graphics --num-envs 4 --time-scale 10
 ```
 
-To recreate the whole set of experiments performed within the original work, the JSPTA configurations must be recreated. To do so refer to the next section [Design and Customization](#dc) and the Layouts folder of this repository.
+To recreate the whole set of experiments performed within the original work, the JSPTA configurations must be recreated. To do so refer to the next section [Design and Customization](#dc) and the Layouts folder of this repository. Additionally, the 5 JSP instances used within the paper were created using the following job seed - machine seed pair:
+
+- Instance 0 (I.0): 0 - 50
+- Instance 1 (I.1): 100 - 150
+- Instance 2 (I.2): 200 - 250
+- Instance 3 (I.3): 300 - 350
+- Instance 4 (I.4): 400 - 450
+
 
 
 <a name="dc"/> 
