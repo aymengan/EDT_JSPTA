@@ -22,16 +22,13 @@ This research aims to address this gap by designing an Experimental Digital Twin
 With a focus on the makespan, our findings reveal that the neural combinatorial approach outperformed the other PDRs, even when tested on unseen shop floor layouts. Furthermore, our results call for further investigation of multi-agent collaboration and layout optimization. Our EDT is a first step towards creating self-adaptive manufacturing systems and testing potential optimization scenarios before transferring them to real-world applications.
 
 <p align="center">
-   <figure class="image">
-   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Layout%203.gif" width="600" height="340" alt="{{ include.description }}">
-   <figcaption>{{ include.description }}</figcaption>
-   </figure>
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Layout%203.gif" width="600" height="340"/>
 </p>
 
 <a name="install"/>
 
 ## Installation
-This repository contains an Experimental Digital Twin (EDT) of a Job Shop with Transportation Agents (JSPTA) present in flexible manufacturing systems.
+This repository contains an Experimental Digital Twin (EDT) of a Job Shop with Transportation Agents (JSPTA) present in flexible manufacturing systems. Prior knowledge of the use of Unity is recommended.
 The following software is required:
 - [Unity Editor 2021.3.9f1](https://unity.com/)
 - [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents)
@@ -48,6 +45,36 @@ Note: Given size limitations the packages contained within Unity project were re
 
 ## Usage
 
-The repository includes one sample of the JSPTA configurations used within the original work. The configuration is refered to 6x3x2_L3, meaning the third layout configuration of the JSPTA problem with 6 jobs, 3 workstations and 2 agents. To implement costum configurations please refer to [Desing and Customization](#dc).
+The repository includes one sample of the JSPTA configurations used within the original work. The configuration is refered to 6x3x2_L3, meaning the third layout configuration of the JSPTA problem with 6 jobs, 3 workstations and 2 agents. To implement costum configurations please refer to [Desing and Customization](#dc). 
 
-### Configurations used within the Original Paper
+###Directly Play gif
+
+The repository comes with already trained agents for the JSPTA, you can directly press play to see how the agents solve the JSPTA problem. Within the FAS GameObject under the FASInfo script the user can change the random seeds used for the creation of the JSP problem. The jobs of the JSP are created using an analogous method to the [Taillard](http://dx.doi.org/10.1016/0377-2217(93)90182-M) benchmarks. Consequently, there are two seeds, the job seed and the machine seed. These agents were trained with a job seed of 100 and a machine seed of 150. For more information about the underlying behaviors of the environment please refer to the [original paper](#og). 
+
+###RANDOM SEEDS
+
+The environment comes with 2 implemented Priority Dispatching Rules (PDRs); Longest Processing Time (LPT) and Shortest Processing Time (SPT). They can be toggled on and off within the AGV GameObjects. Multiple AGVs within the system can use different heuristics or trained networks. 
+
+###BEHAVIOR TYPES
+
+Note: when using Heuristics and custom control be sure to change the AGV Behavior Parameters:Behavior Type to "Heuristic Only"
+
+### Training the Agents with ML-Agents Toolkit
+Training agents can be easily done using Unity ML-Agents Toolkit. The original configuration file "configuration.yaml" used to train all our agents is included within the repository. To do so follow the next steps:
+1. Setup your python environment with a working version of [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents)
+2. Open the python command line
+3. Run ```mlagents-learn "./configuration.yaml" --run-id sample_JSPTA --time-scale 10```
+4. Once ML-agents is ready, click the play button within the environment
+
+We recommend creating an executable and training with no graphics to increase the speed of training and the number of environments that can run in parallel. Within our work we used 4 environments running in parallel with each containing 25 copies of the JSPTA EDT. A sample training environment is shown in the next figure
+
+###Training Environment
+The resulting training command will look like this:
+```
+mlagents-learn "./configuration.yaml" --run-id sample_JSPTA --env="./path_to_executable" --no-graphics --num-envs 4 --time-scale 10
+```
+
+
+
+
+
