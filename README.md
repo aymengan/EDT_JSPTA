@@ -75,10 +75,10 @@ The resulting training command will look something like this:
 mlagents-learn "./configuration.yaml" --run-id sample_JSPTA --env="./path_to_executable" --no-graphics --num-envs 4 --time-scale 10
 ```
 
-To recreate the whole set of experiments performed within the original work the JSPTA configurations must be recreated. To do so refer to the next section of [Design and Customization](#dc) and the Layouts folder of this repository.
+To recreate the whole set of experiments performed within the original work, the JSPTA configurations must be recreated. To do so refer to the next section [Design and Customization](#dc) and the Layouts folder of this repository.
 
 <a name="dc"/> 
-## D
+## Design and Customization
 
 
 
