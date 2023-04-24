@@ -116,7 +116,7 @@ Creating a new layout is easy due to Unity's Prefabs. All the elements of the JS
    <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/s3.PNG"/>
 </p>
 
-4. Insert the Workstations of the JSPTA. Assign a unique ID to each Workstation greater than 0.
+4. Insert the Workstations of the JSPTA. Assign a unique ID to each Workstation greater than 0. Add a custom NavMesh Obstacle to the Workstations to set the distance with which the agents will try to avoid collisions with workstations. Within our work we used a $2x4x1.5$ Obstacle with Carve option and our workstations were scaled to $0.5x0.3x0.5$.
 
 <p align="center">
    <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/s4.PNG"/>
