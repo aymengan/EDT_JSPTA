@@ -77,7 +77,9 @@ mlagents-learn "./configuration.yaml" --run-id sample_JSPTA --env="./path_to_exe
 
 To recreate the whole set of experiments performed within the original work, the JSPTA configurations must be recreated. To do so refer to the next section [Design and Customization](#dc) and the Layouts folder of this repository.
 
+
 <a name="dc"/> 
+
 ## Design and Customization
 
 
