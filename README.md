@@ -69,12 +69,16 @@ Training agents can be easily done using Unity ML-Agents Toolkit. The original c
 We recommend creating an executable and training with no graphics to increase the speed of training and the number of environments that can run in parallel. Within our work we used 4 environments running in parallel with each containing 25 copies of the JSPTA EDT. A sample training environment is shown in the next figure.
 
 ###Training Environment
-The resulting training command will look like this:
+
+The resulting training command will look something like this:
 ```
 mlagents-learn "./configuration.yaml" --run-id sample_JSPTA --env="./path_to_executable" --no-graphics --num-envs 4 --time-scale 10
 ```
 
+To recreate the whole set of experiments performed within the original work the JSPTA configurations must be recreated. To do so refer to the next section of [Design and Customization](#dc) and the Layouts folder of this repository.
 
+<a name="dc"/> 
+## D
 
 
 
