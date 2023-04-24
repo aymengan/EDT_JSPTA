@@ -51,15 +51,21 @@ Note: Given size limitations the packages contained within Unity project were re
 
 The repository includes one sample of the JSPTA configurations used within the original work. The configuration is refered to 6x3x2_L3, meaning the third layout configuration of the JSPTA problem with 6 jobs, 3 workstations and 2 agents. To implement costum configurations please refer to [Desing and Customization](#dc). 
 
-###Directly Play gif
+<p align="center">
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Direct%20Play.PNG"/>
+</p>
 
 The repository comes with already trained agents for the JSPTA, you can directly press play to see how the agents solve the JSPTA problem. Within the FAS GameObject under the FASInfo script the user can change the random seeds used for the creation of the JSP problem. The jobs of the JSP are created using an analogous method to the [Taillard](http://dx.doi.org/10.1016/0377-2217(93)90182-M) benchmarks. Consequently, there are two seeds, the job seed and the machine seed. These agents were trained with a job seed of 100 and a machine seed of 150. For more information about the underlying behaviors of the environment please refer to the [original paper](#og). 
 
-###RANDOM SEEDS
+<p align="center">
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Random%20Seeds.PNG"/>
+</p>
 
 The environment comes with 2 implemented Priority Dispatching Rules (PDRs); Longest Processing Time (LPT) and Shortest Processing Time (SPT). They can be toggled on and off within the AGV GameObjects. Multiple AGVs within the system can use different heuristics or trained networks. 
 
-###BEHAVIOR TYPES
+<p align="center">
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Behavior%20Types.PNG"/>
+</p>
 
 Note: when using Heuristics and manual control be sure to change the AGV GameObject Behavior Parameters:Behavior Type to "Heuristic Only"
 
@@ -72,7 +78,9 @@ Training agents can be easily done using Unity ML-Agents Toolkit. The original c
 
 We recommend creating an executable and training with no graphics to increase the speed of training and the number of environments that can run in parallel. Within our work we used 4 environments running in parallel with each containing 25 copies of the JSPTA EDT. A sample training environment is shown in the next figure.
 
-###Training Environment
+<p align="center">
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Training_Env.PNG"/>
+</p>
 
 The resulting training command will look something like this:
 ```
@@ -97,11 +105,29 @@ Creating a new layout is easy due to Unity's Prefabs. All the elements of the JS
 
 1. Create a copy of the "sample JSPTA" scene and remove the elements within the FAS GameObject
 2. Insert a new Shop Floor and resize to the desired dimensions.
+<p align="center">
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/s2.PNG"/>
+</p>
 3. Insert the desired Geofences.
+<p align="center">
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/s3.PNG"/>
+</p>
 4. Insert the Workstations of the JSPTA. Assign a unique ID to each Workstation greater than 0.
+<p align="center">
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/s4.PNG"/>
+</p>
 5. Insert the Products and Delivery Station of the JSPTA. Every Product and Delivery Station must have a unique ID greater than 0.
+<p align="center">
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/s5.PNG"/>
+</p>
 6. Insert the AGVs. Every AGV must have a unique ID starting with 0. You must reference the MultiAgent controller to the AGVs under JSSP Multi Agent:Controller.
+<p align="center">
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/s6.PNG"/>
+</p>
 7. Run the environment.
+<p align="center">
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/s7.PNG"/>
+</p>
 
 Note: Be sure to Bake the Surfaces with NavMesh and, if using directly for inference, remember to adjust the input and output sizes of the network.  Given a configuration with n products, m workstations and k agents, the input size and output size are $2n+2m(n+1)+k-1$ and $n+1$ respectively.
 
