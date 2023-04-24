@@ -1,7 +1,7 @@
 # Code for "Experimental Digital Twin for Job Shops with Transportation Agents" (EDT for JSPTA)
 [[Full Paper]](PLACEHOLDER)
 
-Accompanying code for "Experimental Digital Twin for Job Shops with Transportation Agents" Research Paper. 
+Code for "Experimental Digital Twin for Job Shops with Transportation Agents" Research Paper. 
 
 ##### Contents  
 - [Introduction](#intro)  
