@@ -4,7 +4,7 @@
 Code for "Experimental Digital Twin for Job Shops with Transportation Agents" Research Paper. 
 
 <p align="center">
-   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Movable%20Camera.PNG"/>
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Movable%20Camera%20(2).PNG"/>
 </p>
 
 ##### Contents  
