@@ -126,7 +126,7 @@ Creating a new layout is easy due to Unity's Prefabs. All the elements of the JS
 </p>
 7. Run the environment.
 <p align="center">
-   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/s7.PNG"/>
+   <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/S7.PNG"/>
 </p>
 
 Note: Be sure to Bake the Surfaces with NavMesh and, if using directly for inference, remember to adjust the input and output sizes of the network.  Given a configuration with n products, m workstations and k agents, the input size and output size are $2n+2m(n+1)+k-1$ and $n+1$ respectively.
