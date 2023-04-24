@@ -105,26 +105,37 @@ Creating a new layout is easy due to Unity's Prefabs. All the elements of the JS
 
 1. Create a copy of the "sample JSPTA" scene and remove the elements within the FAS GameObject
 2. Insert a new Shop Floor and resize to the desired dimensions.
+
 <p align="center">
    <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/s2.PNG"/>
 </p>
+
 3. Insert the desired Geofences.
+
 <p align="center">
    <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/s3.PNG"/>
 </p>
+
 4. Insert the Workstations of the JSPTA. Assign a unique ID to each Workstation greater than 0.
+
 <p align="center">
    <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/s4.PNG"/>
 </p>
+
 5. Insert the Products and Delivery Station of the JSPTA. Every Product and Delivery Station must have a unique ID greater than 0.
+
 <p align="center">
    <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/s5.PNG"/>
 </p>
+
 6. Insert the AGVs. Every AGV must have a unique ID starting with 0. You must reference the MultiAgent controller to the AGVs under JSSP Multi Agent:Controller.
+
 <p align="center">
    <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/s6.PNG"/>
 </p>
+
 7. Run the environment.
+
 <p align="center">
    <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/S7.PNG"/>
 </p>
