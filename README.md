@@ -66,7 +66,7 @@ Training agents can be easily done using Unity ML-Agents Toolkit. The original c
 3. Run ```mlagents-learn "./configuration.yaml" --run-id sample_JSPTA --time-scale 10```
 4. Once ML-agents is ready, click the play button within the environment
 
-We recommend creating an executable and training with no graphics to increase the speed of training and the number of environments that can run in parallel. Within our work we used 4 environments running in parallel with each containing 25 copies of the JSPTA EDT. A sample training environment is shown in the next figure
+We recommend creating an executable and training with no graphics to increase the speed of training and the number of environments that can run in parallel. Within our work we used 4 environments running in parallel with each containing 25 copies of the JSPTA EDT. A sample training environment is shown in the next figure.
 
 ###Training Environment
 The resulting training command will look like this:
