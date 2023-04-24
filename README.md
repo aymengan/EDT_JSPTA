@@ -99,8 +99,8 @@ Creating a new layout is easy due to Unity's Prefabs. All the elements of the JS
 2. Insert a new Shop Floor and resize to the desired dimensions.
 3. Insert the desired Geofences.
 4. Insert the Workstations of the JSPTA. Assign a unique ID to each Workstation greater than 0.
-5. Insert the Products and Delivery Station of the JSPTA. Every Product must have a unique ID greater than 0.
-6. Insert the AGVs. Every AGV must have a unique ID starting with 0.
+5. Insert the Products and Delivery Station of the JSPTA. Every Product and Delivery Station must have a unique ID greater than 0.
+6. Insert the AGVs. Every AGV must have a unique ID starting with 0. You must reference the MultiAgent controller to the AGVs under JSSP Multi Agent:Controller.
 7. Run the environment.
 
 Note: Be sure to Bake the Surfaces with NavMesh and, if using directly for inference, remember to adjust the input and output sizes of the network.  Given a configuration with n products, m workstations and k agents, the input size and output size are $2n+2m(n+1)+k-1$ and $n+1$ respectively.
