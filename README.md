@@ -57,7 +57,7 @@ The environment comes with 2 implemented Priority Dispatching Rules (PDRs); Long
 
 ###BEHAVIOR TYPES
 
-Note: when using Heuristics and custom control be sure to change the AGV Behavior Parameters:Behavior Type to "Heuristic Only"
+Note: when using Heuristics and manual control be sure to change the AGV GameObject Behavior Parameters:Behavior Type to "Heuristic Only"
 
 ### Training the Agents with ML-Agents Toolkit
 Training agents can be easily done using Unity ML-Agents Toolkit. The original configuration file "configuration.yaml" used to train all our agents is included within the repository. To do so follow the next steps:
