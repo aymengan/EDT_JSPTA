@@ -39,7 +39,7 @@ The following software is required:
 
 To properly setup the environment you will need to follow the next steps:
 1. Install the [Unity Editor 2021.3.9f1](https://unity.com/)
-2. Clone the repository using git clone https://github.com/aymengan/EDT_JSPTA.git
+2. Clone the repository using ```git clone https://github.com/aymengan/EDT_JSPTA.git```
 3. Open the Environment folder of this repository as a project with the Unity editor
 4. Setup a python environment with [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents)
 
