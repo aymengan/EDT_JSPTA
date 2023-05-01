@@ -49,7 +49,7 @@ Note: Given size limitations the packages contained within Unity project were re
 
 ## Usage
 
-The repository includes one sample of the JSPTA configurations used within the original work. The configuration is refered to 6x3x2_L3, meaning the third layout configuration of the JSPTA problem with 6 jobs, 3 workstations and 2 agents. To implement costum configurations please refer to [Desing and Customization](#dc). 
+The repository includes one sample of the JSPTA configurations used within the original work. The configuration is refered to as 6x3x2_L3, meaning the third layout configuration of the JSPTA problem with 6 jobs, 3 workstations and 2 agents. To implement costum configurations please refer to [Desing and Customization](#dc). 
 
 <p align="center">
    <img src="https://github.com/aymengan/EDT_JSPTA/blob/main/media/Direct%20Play.PNG"/>
