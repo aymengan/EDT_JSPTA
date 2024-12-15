@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.45140117, g: 0.5008937, b: 0.5723182, a: 1}
+  m_IndirectSpecularColor: {r: 0.45140058, g: 0.500893, b: 0.57231724, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1253,6 +1253,7 @@ MonoBehaviour:
   manual: 0
   SPT: 0
   LPT: 0
+  custom: 0
   last_action: 0
   carrying: 0
   init_pos: {x: 0, y: 0, z: 0}
@@ -1326,7 +1327,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   products: []
-  tables: []
   workstations: []
   deliverys: []
 --- !u!114 &1254913458
@@ -1353,6 +1353,7 @@ MonoBehaviour:
   jobSeed: 100
   machineSeed: 150
   trainingMode: 0
+  stSolution: 
 --- !u!4 &1254913459
 Transform:
   m_ObjectHideFlags: 0
@@ -1429,14 +1430,8 @@ MonoBehaviour:
   scheduleObject: {fileID: 9002411}
   maxEpisodeSteps: 10000
   speed: 2
-  lower_bounds: []
-  debbugProductID: 1
-  reward: 0
-  cummulativeReward: 0
-  inputs: []
   printJobs: 0
   printMakespan: 0
-  episode: 0
 --- !u!4 &1267506057 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3071085011439446712, guid: 11e33c71bbf493b4bba1a82d20982230, type: 3}
@@ -2615,6 +2610,7 @@ MonoBehaviour:
   manual: 0
   SPT: 0
   LPT: 0
+  custom: 0
   last_action: 0
   carrying: 0
   init_pos: {x: 0, y: 0, z: 0}

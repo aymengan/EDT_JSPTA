@@ -503,31 +503,9 @@ public class JSSPMultiAgent : Agent
                     GrabProduct(product);
                 }
             }
-            if (collider.CompareTag("table"))
-            {
-                TemporalStation temp = collider.transform.GetComponent<TemporalStation>();
-                if (temp.full)
-                {
-                    product = temp.GetProduct();
-                    GrabProduct(product);
-                    temp.full = false;
-                }
-
-            }
         }
         else
         {
-            if (collider.CompareTag("table"))
-            {
-                TemporalStation temp = collider.transform.GetComponent<TemporalStation>();
-
-                if (!temp.full)
-                {
-                    temp.full = true;
-                    product.SetinTable(collider.transform);
-                    decided = false;
-                }
-            }
         }
     }
 

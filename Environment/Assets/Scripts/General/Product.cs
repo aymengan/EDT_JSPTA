@@ -8,7 +8,6 @@ public class Product : MonoBehaviour
     // Colors
     private List<Color> color_list;
     public int product_ID = 0;
-    public bool randomJob;
     private int jobSeed;
     private int machineSeed;
 
@@ -16,6 +15,7 @@ public class Product : MonoBehaviour
     public List<Vector2> job;
 
     [HideInInspector]
+    // The pointer to the next operation that needs to be performed
     public int task_pointer = 0;
     private Material product_material;
     public bool processing= false;
@@ -27,9 +27,10 @@ public class Product : MonoBehaviour
     // Times of Completion
     public List<float> times;
 
-    // Workstations
+    // Currently used workstation on a product (collider and script object)
     private Collider used_w;
     private Workstation workstation;
+    
     private Vector3 outputPosition;
 
     [HideInInspector]
@@ -37,19 +38,25 @@ public class Product : MonoBehaviour
 
     // Initial Parameters
     [HideInInspector]
+    // A product can have a workstation, AGV or delivery station as a parent
+    // The initial parent of a product at the beginning of an epsiode
     public Transform og_parent;
     [HideInInspector]
+    // The initial position of a product at the beginning of an epsiode
     public Vector3 og_position;
+    // Time as a float value indicating when an episode started
     private float episodeStart;
 
+    // Indicates whether a product is currently grabbed by a robot
     public bool grabbed= false;
 
     [HideInInspector]
+    // Only used for SPT, LPT heuristics. Indicates whether a product has been already assigned to a workstation
+    // and robot
     public bool assigned = false;
 
-    [Header("Debug")]
+    [Header("Number of Workstations")]
     private int Nw;
-    private float ogTimeScale;
     
     private void Awake()
     {
@@ -65,7 +72,6 @@ public class Product : MonoBehaviour
         FASinfo info = transform.parent.GetComponent<FASinfo>();
         color_list = info.color_list;
         Nw = info.Nw;
-        randomJob = info.randomJob;
         jobSeed = info.jobSeed;
         machineSeed = info.machineSeed;
 
@@ -79,21 +85,23 @@ public class Product : MonoBehaviour
         MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
         product_material = meshRenderer.material;
         ChangeColor(product_material, color_list[(int)job[task_pointer][0]]);
-
-        ogTimeScale = Time.timeScale;
     }
 
 
     private void GenerateJob()
     {
-        
+        // Generate processing times for each job in the range [1, 10] for each operation
+        // number of operations == number of workstations
         for(int i = 0; i < Nw; i++)
         {
+            // Ensure disjunctive processing times for each operation of each job
             for (int j = 0; j < product_ID*Nw; j++) { float _ = UnityEngine.Random.Range(1, 10); }
             float t = UnityEngine.Random.Range(1f, 10f);
+            // Product IDs are in {1, ..., n} where n is the number of products
             job.Add(new Vector2(i + 1f, t));
         }
-
+        
+        // Generate random permutations of 
         UnityEngine.Random.InitState(machineSeed);
         List<Vector2> temp_list = new List<Vector2>(job);
         for(int i = 0; i< temp_list.Count; i++)
@@ -229,12 +237,6 @@ public class Product : MonoBehaviour
     public void SetParent(Transform parent)
     {
         transform.parent = parent;
-    }
-
-    public void SetinTable(Transform table)
-    {
-        SetParent(table);
-        SetPosition(table.gameObject.GetComponent<TemporalStation>().load.position);
     }
 
     public void EpisodeReset()

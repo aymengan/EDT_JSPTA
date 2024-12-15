@@ -7,7 +7,7 @@ public class FASinfo : MonoBehaviour
 
     [Tooltip("Colors for Products and Workstations")]
     public List<Color> color_list;
-    [Tooltip("Origini of entire system")]
+    [Tooltip("Origin of entire system")]
     public Transform Origin;
     [Tooltip("Number of Workstations")]
     public int Nw;
