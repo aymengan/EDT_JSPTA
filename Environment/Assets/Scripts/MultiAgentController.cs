@@ -56,7 +56,7 @@ public class MultiAgentController : MonoBehaviour
     //[Header("Logging")]
     // For debugging purposes to show the internal state in the Unity editor during runtime (if public), or in the Debugger
     private List<float> lower_bounds;
-    private int debbugProductID = 0;
+    private int debbugProductID = 1;
     private float reward = 0;
     private List<float> inputs;
     private int episode = 0;
@@ -112,7 +112,9 @@ public class MultiAgentController : MonoBehaviour
 
     public void PrintJobsCSV()
     {
-        StreamWriter writer = new StreamWriter(Application.dataPath + "/Data/" + "Jobs-" + transform.GetComponent<FASinfo>().jobSeed+".csv");
+        int jobSeed = transform.GetComponent<FASinfo>().jobSeed;
+        int machineSeed = transform.GetComponent<FASinfo>().machineSeed;
+        StreamWriter writer = new StreamWriter(Application.dataPath + "/Data/" + "Jobs-" + jobSeed + "-" + machineSeed+".csv");
 
 
         for (int i = 0; i < productDictionary.Count; i++)
@@ -160,21 +162,24 @@ public class MultiAgentController : MonoBehaviour
         if (printMakespan)
         {
             string title= "nada";
+            int jobSeed = transform.GetComponent<FASinfo>().jobSeed;
+            int machineSeed = transform.GetComponent<FASinfo>().machineSeed;
+            
             if (agents[0].inference)
             {
-                title = Application.dataPath + "/Data/" + "NN-" + transform.GetComponent<FASinfo>().jobSeed + ".csv";
+                title = Application.dataPath + "/Data/" + "NN-" + jobSeed + "-" + machineSeed + ".csv";
             }
             else if (agents[0].SPT)
             {
-                title = Application.dataPath + "/Data/" + "SPT-" + transform.GetComponent<FASinfo>().jobSeed + ".csv";
+                title = Application.dataPath + "/Data/" + "SPT-" + jobSeed + "-" + machineSeed + ".csv";
             }
             else if (agents[0].LPT)
             {
-                title = Application.dataPath + "/Data/" + "LPT-" + transform.GetComponent<FASinfo>().jobSeed + ".csv";
+                title = Application.dataPath + "/Data/" + "LPT-" + jobSeed + "-" + machineSeed + ".csv";
             }
             else if (agents[0].custom)
             {
-                title = Application.dataPath + "/Data/" + "Custom-" + transform.GetComponent<FASinfo>().jobSeed + ".csv";
+                title = Application.dataPath + "/Data/" + "Custom-" + jobSeed + "-" + machineSeed + ".csv";
             }
             makespanWriter = new StreamWriter(title);
 
@@ -396,6 +401,8 @@ public class MultiAgentController : MonoBehaviour
         for (int i = 1; i < productDictionary.Count + 1; i++) { finished = finished && productDictionary[i].finished; }
         if (finished)
         {
+            String jobSeed = transform.GetComponent<FASinfo>().jobSeed.ToString();
+            String machineSeed = transform.GetComponent<FASinfo>().machineSeed.ToString();
             float temp2 = Time.time - episode_start;
             //Debug.Log("Makespan= " + temp2 + " CR= " + agents[0].GetCumulativeReward());
             if (printMakespan)
@@ -404,7 +411,7 @@ public class MultiAgentController : MonoBehaviour
                 line += episode +", ";
                 line += temp2;
                 makespanWriter.WriteLine(line);
-                line += " " + transform.GetComponent<FASinfo>().jobSeed.ToString();
+                line += " js:" + jobSeed + " ms:" + machineSeed;
                 Debug.Log(line);
             }
             episode++;
