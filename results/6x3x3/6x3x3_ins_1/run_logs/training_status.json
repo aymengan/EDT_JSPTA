@@ -1,0 +1,65 @@
+{
+    "AGV": {
+        "checkpoints": [
+            {
+                "steps": 2499984,
+                "file_path": "results\\6x3x3_ins_1\\AGV\\AGV-2499984.onnx",
+                "reward": -12.415852552766253,
+                "creation_time": 1667964016.2511828,
+                "auxillary_file_paths": [
+                    "results\\6x3x3_ins_1\\AGV\\AGV-2499984.pt"
+                ]
+            },
+            {
+                "steps": 2999998,
+                "file_path": "results\\6x3x3_ins_1\\AGV\\AGV-2999998.onnx",
+                "reward": -12.460543805902654,
+                "creation_time": 1667964521.08229,
+                "auxillary_file_paths": [
+                    "results\\6x3x3_ins_1\\AGV\\AGV-2999998.pt"
+                ]
+            },
+            {
+                "steps": 3499981,
+                "file_path": "results\\6x3x3_ins_1\\AGV\\AGV-3499981.onnx",
+                "reward": -12.390508386472993,
+                "creation_time": 1667965015.7393322,
+                "auxillary_file_paths": [
+                    "results\\6x3x3_ins_1\\AGV\\AGV-3499981.pt"
+                ]
+            },
+            {
+                "steps": 3999987,
+                "file_path": "results\\6x3x3_ins_1\\AGV\\AGV-3999987.onnx",
+                "reward": -12.355267775686164,
+                "creation_time": 1667965330.9699707,
+                "auxillary_file_paths": [
+                    "results\\6x3x3_ins_1\\AGV\\AGV-3999987.pt"
+                ]
+            },
+            {
+                "steps": 4200055,
+                "file_path": "results\\6x3x3_ins_1\\AGV\\AGV-4200055.onnx",
+                "reward": -12.36931900024414,
+                "creation_time": 1667965434.3996286,
+                "auxillary_file_paths": [
+                    "results\\6x3x3_ins_1\\AGV\\AGV-4200055.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 4200055,
+            "file_path": "results\\6x3x3_ins_1\\AGV.onnx",
+            "reward": -12.36931900024414,
+            "creation_time": 1667965434.3996286,
+            "auxillary_file_paths": [
+                "results\\6x3x3_ins_1\\AGV\\AGV-4200055.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

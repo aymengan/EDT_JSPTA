@@ -1,0 +1,65 @@
+{
+    "AGV": {
+        "checkpoints": [
+            {
+                "steps": 3499922,
+                "file_path": "results\\9x3x2_ins_0\\AGV\\AGV-3499922.onnx",
+                "reward": -24.943891286849976,
+                "creation_time": 1668045624.2006567,
+                "auxillary_file_paths": [
+                    "results\\9x3x2_ins_0\\AGV\\AGV-3499922.pt"
+                ]
+            },
+            {
+                "steps": 3999931,
+                "file_path": "results\\9x3x2_ins_0\\AGV\\AGV-3999931.onnx",
+                "reward": -24.990010706583657,
+                "creation_time": 1668046167.1479526,
+                "auxillary_file_paths": [
+                    "results\\9x3x2_ins_0\\AGV\\AGV-3999931.pt"
+                ]
+            },
+            {
+                "steps": 4499964,
+                "file_path": "results\\9x3x2_ins_0\\AGV\\AGV-4499964.onnx",
+                "reward": -24.966837763786316,
+                "creation_time": 1668046772.2149098,
+                "auxillary_file_paths": [
+                    "results\\9x3x2_ins_0\\AGV\\AGV-4499964.pt"
+                ]
+            },
+            {
+                "steps": 4999995,
+                "file_path": "results\\9x3x2_ins_0\\AGV\\AGV-4999995.onnx",
+                "reward": -24.910172422167282,
+                "creation_time": 1668047378.6630318,
+                "auxillary_file_paths": [
+                    "results\\9x3x2_ins_0\\AGV\\AGV-4999995.pt"
+                ]
+            },
+            {
+                "steps": 5000039,
+                "file_path": "results\\9x3x2_ins_0\\AGV\\AGV-5000039.onnx",
+                "reward": -24.908364454905193,
+                "creation_time": 1668047378.7481084,
+                "auxillary_file_paths": [
+                    "results\\9x3x2_ins_0\\AGV\\AGV-5000039.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5000039,
+            "file_path": "results\\9x3x2_ins_0\\AGV.onnx",
+            "reward": -24.908364454905193,
+            "creation_time": 1668047378.7481084,
+            "auxillary_file_paths": [
+                "results\\9x3x2_ins_0\\AGV\\AGV-5000039.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

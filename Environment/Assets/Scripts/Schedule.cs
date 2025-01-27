@@ -5,31 +5,23 @@ using Unity.MLAgents;
 
 public class Schedule : MonoBehaviour
 {
+    // The best makespan achieved so far
     public float bestMakespan;
 
-    public Dictionary<int, List<float>> schedule;
-
+    // Used to log Tensorboard metrics
     StatsRecorder statsRecorder;
-
-    // Start is called before the first frame update
+    
     void Awake()
     {
-        schedule = new Dictionary<int, List<float>>();
         statsRecorder = Academy.Instance.StatsRecorder;
         bestMakespan = -1;
     }
-
-    public void ProposeMakespan(float makespan, Dictionary<int, List<float>> ps)
-    {
-        if (bestMakespan<0) { bestMakespan = makespan; }
-        if (makespan < bestMakespan)
-        {
-            bestMakespan = makespan;
-            statsRecorder.Add("JSSP/best-makespan", bestMakespan, StatAggregationMethod.MostRecent);
-            schedule = ps;
-            LogSchedule(schedule);
-        }
-    }
+    
+    /// <summary>
+    /// Checks if the new makespan is better than the best one achieved so far. If so, it updates the best makespan and
+    /// logs it to Tensorboard. 
+    /// </summary>
+    /// <param name="makespan">The proposed makespan value.</param>
     public void ProposeMakespan(float makespan)
     {
         if (bestMakespan < 0) { bestMakespan = makespan; }
@@ -40,18 +32,9 @@ public class Schedule : MonoBehaviour
         }
     }
 
-    public void LogSchedule(Dictionary<int, List<float>> ps)
-    {
-        for(int i = 0; i < ps.Count; i++)
-        {
-            for (int j = 0; j < ps[i+1].Count; j++) 
-            {
-                int temp_ID = i + 1;
-                statsRecorder.Add("Answer/" + temp_ID + "&" + j, ps[i+1][j], StatAggregationMethod.MostRecent);
-            }
-        }
-    }
-
+    /// <summary>
+    /// Logs the current best makespan value achied so far at fixed intervals.
+    /// </summary>
     private void FixedUpdate()
     {
         statsRecorder.Add("JSSP/best-makespan", bestMakespan, StatAggregationMethod.MostRecent);
