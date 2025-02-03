@@ -38,24 +38,17 @@ public class Workstation : MonoBehaviour
 
     }
 
-    /// <summary>
-    /// Gets the output location of processed products. Either stacks them and places them all in the same location
-    /// or places them in up to 5 different locations around the workstation.
-    /// </summary>
-    /// <returns>
-    /// A tuple containing the position of the output location and the placement ID.
-    /// </returns>
+    // Function to get output location of processed products
     public (Vector3,int) GetOutputLocation()
     {
         Vector3 pos = output_location.position;
         List<int> placementIDs = new List<int>();
 
         if (stack_output) { 
-            // If stacking, return the same position for all products, no placement id is necessary
+            
             return (pos, 0); }
         int c = 0;
 
-        
         for (int i = 0; i < transform.childCount; i++)
         {
             Transform child = transform.GetChild(i);

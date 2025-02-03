@@ -9,62 +9,37 @@ using System;
 
 public class MultiAgentController : MonoBehaviour
 {
-    // List of all the elements within FAS
+    // Lists of all the elements within FAS
     private List<Transform> childs;
-    
-    // Refined dictionaries for all the elements of a specific type within FAS
-    
-    // We map the id of the workstation to the script workstation object, attached to the workstation game object
-    // ID is in {1, ..., n} where n is the number of workstations
+    private List<TemporalStation> tables;
     private Dictionary<int, Workstation> workstationDictionary;
-    
-    // ID is in {1, ..., n} where n is the number of workstations
-    // We map the id of the workstation to the {input, output} location of the workstation
     private Dictionary<int, Transform> inputLocationDictionary;
     private Dictionary<int, Transform> outputLocationDictionary;
-    
-    // We map the id of the workstation to the delivery location
-    // ID is in {-1, ..., -n} where n is the number of delivery stations, only tested for exactly one delivery station
     private Dictionary<int, Transform> deliveryLocationDictionary;
-    
-    // We map the id of the product to the script product object, attached to the product game object
     private Dictionary<int, Product> productDictionary;
-    
     private Dictionary<int, List<float>> JSSPAnswer;
 
-    // List of all agent (=AGV) scripts attached to each agent game object, defining the RL behavior
     public List<JSSPMultiAgent> agents;
-    
-    // The AGVgroup encompassing all agents
     private SimpleMultiAgentGroup AGVgroup;
-    
-    // Dictionary containing the distances between all pairs of workstations,
-    // from the output collider to the next input collider
     private Dictionary<(int, int), float> stationDistances;
-    
+    private NavMeshPath path;
     public GameObject scheduleObject;
-    private Schedule schedule;
+    public Schedule schedule;
 
-    [Tooltip("Maximum steps for every episode.")]
+    [Tooltip("Maximum steps for every episode")]
     public int maxEpisodeSteps;
-    // Tracks how close we are to maxEpisodeSteps
     private int reset_timer;
-    // The maximal speed of the AGVs to move
     public float speed = 2f;
 
-
-    //[Header("Logging")]
-    // For debugging purposes to show the internal state in the Unity editor during runtime (if public), or in the Debugger
-    private List<float> lower_bounds;
-    private int debbugProductID = 1;
-    private float reward = 0;
-    private List<float> inputs;
-    private int episode = 0;
-    
-    // Whether to generate .csv's for the makespan values and the generated JSSP instances 
-    [Header("Logging")]
-    public bool printJobs;
-    public bool printMakespan;
+    [Header("Debug")]
+    public List<float> lower_bounds;
+    public int debbugProductID = 0;
+    public float reward = 0;
+    public float cummulativeReward = 0;
+    public List<float> inputs;
+    private bool printJobs;
+    private bool printMakespan;
+    public int episode = 0; 
 
     // Rewards
     private float episode_start;
@@ -76,21 +51,24 @@ public class MultiAgentController : MonoBehaviour
     private float bestMakespan =-1;
 
     private StatsRecorder statsRecorder;
-    
-    // Counts how often we request a decision, i.e. trigger the policy NN
     private int trainingStep;
-    // Responsible for logging the makespan files to the file
     private StreamWriter makespanWriter;
 
     //Custom Solution
     private int cspointer = 0;
     private System.Array customSolution;
+    private FASinfo info;
+    
+    // Track how much of the evaluation has been conducted
+    private int evalEpisodes = 0;
+    private int episodesToEvaluate;
 
     void Awake()
     {
         // Initialize
         episode = 0;
         childs = new List<Transform>();
+        tables = new List<TemporalStation>();
         workstationDictionary = new Dictionary<int, Workstation>();
         inputLocationDictionary = new Dictionary<int, Transform>();
         outputLocationDictionary = new Dictionary<int, Transform>();
@@ -101,44 +79,22 @@ public class MultiAgentController : MonoBehaviour
         agents = new List<JSSPMultiAgent>();
         stationDistances = new Dictionary<(int, int), float>();
         AGVgroup = new SimpleMultiAgentGroup();
+        path = new NavMeshPath();
         lower_bounds = new List<float>();
         inputs = new List<float>();
         statsRecorder = Academy.Instance.StatsRecorder;
         if (scheduleObject) { schedule = scheduleObject.transform.GetComponent<Schedule>(); }
         trainingStep = 0;
-
-        
     }
 
-    public void PrintJobsCSV()
+    void Start()
     {
-        int jobSeed = transform.GetComponent<FASinfo>().jobSeed;
-        int machineSeed = transform.GetComponent<FASinfo>().machineSeed;
-        StreamWriter writer = new StreamWriter(Application.dataPath + "/Data/" + "Jobs-" + jobSeed + "-" + machineSeed+".csv");
+        episodesToEvaluate = schedule.episodesToEvaluate;
+        printJobs = schedule.printJobs;
+        printMakespan = schedule.printMakespan;
 
 
-        for (int i = 0; i < productDictionary.Count; i++)
-        {
-            string line= "J" + productDictionary[i + 1].product_ID + ", ";
-            List<Vector2> temp_job = productDictionary[i + 1].GetJob();
-            for (int j = 0; j < temp_job.Count-1; j++)
-            {
-                line += temp_job[j].x + ", " + temp_job[j].y + ", ";
-            }
-            writer.WriteLine(line);
-
-        }
-        writer.Flush();
-        writer.Close();
-    }
-    public void IncreaseStep()
-    {
-        trainingStep++;
-        statsRecorder.Add("TrainingStep", trainingStep, StatAggregationMethod.MostRecent);
-    }
-
-    public void Start()
-    {
+        info = transform.GetComponent<FASinfo>();
         customSolution = transform.GetComponent<FASinfo>().customSolution;
 
         CollectChilds();
@@ -155,41 +111,71 @@ public class MultiAgentController : MonoBehaviour
         initial_h = h;
         
         reward = 0;
+        cummulativeReward = 0;
         episode_start = Time.time;
 
         if (printJobs) { PrintJobsCSV(); }
 
-        if (printMakespan)
+        if (printMakespan && !schedule.randomJob)
         {
-            string title= "nada";
+            string title = "nada";
             int jobSeed = transform.GetComponent<FASinfo>().jobSeed;
             int machineSeed = transform.GetComponent<FASinfo>().machineSeed;
-            
-            if (agents[0].inference)
+            string dataPath = Application.dataPath + "/Data/";
+            if (schedule.inference)
             {
-                title = Application.dataPath + "/Data/" + "NN-" + jobSeed + "-" + machineSeed + ".csv";
+                title = $"{dataPath}NN-{jobSeed}-{machineSeed}.csv";
             }
-            else if (agents[0].SPT)
+            else if (schedule.SPT)
             {
-                title = Application.dataPath + "/Data/" + "SPT-" + jobSeed + "-" + machineSeed + ".csv";
+                title = $"{dataPath}SPT-{jobSeed}-{machineSeed}.csv";
             }
-            else if (agents[0].LPT)
+            else if (schedule.LPT)
             {
-                title = Application.dataPath + "/Data/" + "LPT-" + jobSeed + "-" + machineSeed + ".csv";
+                title = $"{dataPath}LPT-{jobSeed}-{machineSeed}.csv";
             }
             else if (agents[0].custom)
             {
-                title = Application.dataPath + "/Data/" + "Custom-" + jobSeed + "-" + machineSeed + ".csv";
+                title = $"{dataPath}Custom-{jobSeed}-{machineSeed}.csv";
             }
             makespanWriter = new StreamWriter(title);
-
-
+            print("makespan writer initialized");
         }
     }
 
+    public void PrintJobsCSV()
+    {
+        if (!schedule.randomJob)
+        {
+            int jobSeed = transform.GetComponent<FASinfo>().jobSeed;
+            int machineSeed = transform.GetComponent<FASinfo>().machineSeed;
+            string fileName = $"Jobs-{jobSeed}-{machineSeed}.csv";
+            StreamWriter writer = new StreamWriter(Path.Combine(Application.dataPath, "Data", fileName));
+        
+            for (int i = 0; i < productDictionary.Count; i++)
+            {
+                string line= "J" + productDictionary[i + 1].product_ID + ", ";
+                List<Vector2> temp_job = productDictionary[i + 1].GetJob();
+                for (int j = 0; j < temp_job.Count-1; j++)
+                {
+                    line += temp_job[j].x + ", " + temp_job[j].y + ", ";
+                }
+                writer.WriteLine(line);
+
+            }
+            writer.Flush();
+            writer.Close();
+        }
+    }
+    public void IncreaseStep()
+    {
+        trainingStep++;
+        statsRecorder.Add("TrainingStep", trainingStep, StatAggregationMethod.MostRecent);
+    }
+    
+
     public void GetInitialLB()
     {
-        NavMeshPath path = new NavMeshPath();
         h = 0;
         for (int i = 1; i < productDictionary.Count + 1; i++)
         {
@@ -247,7 +233,6 @@ public class MultiAgentController : MonoBehaviour
 
     public List<float> GetLBObservations(int ID, Vector3 agentPosition)
     {
-        NavMeshPath path = new NavMeshPath();
         List<float> observations = new List<float>();
         last_h = h;
         h = 0;
@@ -372,8 +357,17 @@ public class MultiAgentController : MonoBehaviour
             //Debug.Log("P_ID; "+ temp_p.product_ID + " C: " + c  );
         }
         reward = (last_h - h);
+        cummulativeReward += reward;
 
-        foreach(var agent in agents) { agent.AddReward(reward); }
+        if (schedule.maTrainer)
+        {
+            AGVgroup.AddGroupReward(reward);
+        }
+        else
+        {
+            foreach(var agent in agents) { agent.AddReward(reward); }
+        }
+
 
         //Debug
         foreach(var obs in observations) { inputs.Add(obs); }
@@ -393,6 +387,7 @@ public class MultiAgentController : MonoBehaviour
             AGVgroup.GroupEpisodeInterrupted();
             episode_start = Time.time;
             reward = 0;
+            cummulativeReward = 0;
             
             h = initial_h;
         }
@@ -401,25 +396,25 @@ public class MultiAgentController : MonoBehaviour
         for (int i = 1; i < productDictionary.Count + 1; i++) { finished = finished && productDictionary[i].finished; }
         if (finished)
         {
-            String jobSeed = transform.GetComponent<FASinfo>().jobSeed.ToString();
-            String machineSeed = transform.GetComponent<FASinfo>().machineSeed.ToString();
             float temp2 = Time.time - episode_start;
             //Debug.Log("Makespan= " + temp2 + " CR= " + agents[0].GetCumulativeReward());
-            if (printMakespan)
+            if (printMakespan && !schedule.randomJob)
             {
                 string line = "";
                 line += episode +", ";
                 line += temp2;
                 makespanWriter.WriteLine(line);
-                line += " js:" + jobSeed + " ms:" + machineSeed;
+                evalEpisodes++;
+                int jobSeed;
+                int machineSeed;
+                (jobSeed, machineSeed) = info.GetSeeds();
+                line += " " + jobSeed.ToString() + " " + machineSeed.ToString();
                 Debug.Log(line);
             }
             episode++;
             if(bestMakespan < 0) 
             { 
                 bestMakespan = h;
-                
-                
             }
             //Get Best Schedule
             if (bestMakespan > h)
@@ -443,6 +438,7 @@ public class MultiAgentController : MonoBehaviour
             reset_timer = 0;
             episode_start = Time.time;
             reward = 0;
+            cummulativeReward = 0;
             h = initial_h;
 
         }
@@ -462,6 +458,8 @@ public class MultiAgentController : MonoBehaviour
             else if (child.CompareTag("table"))
             {
                 childs.Add(child);
+                TemporalStation table = child.GetComponent<TemporalStation>();
+                tables.Add(table);
             }
             else if (child.CompareTag("workstation"))
             {
@@ -495,13 +493,26 @@ public class MultiAgentController : MonoBehaviour
     // Reset all the scene
     public void ResetScene()
     {
+        int newJobSeed;
+        int newMachineSeed;
+        (newJobSeed, newMachineSeed) = info.GetSeeds();
+        if (schedule.randomJob)
+        {
+            info.resetSeeds();
+        }
         foreach (Transform child in childs)
         {
             // Reset Products
             if (child.CompareTag("product"))
             {
                 Product temp_product = child.GetComponent<Product>();
-                temp_product.EpisodeReset();
+                temp_product.EpisodeReset(newJobSeed, newMachineSeed);
+            }
+            // Reset tables
+            else if (child.CompareTag("table"))
+            {
+                TemporalStation temp_st = child.GetComponent<TemporalStation>();
+                temp_st.EpisodeReset();
             }
             // Reset Workstation
             else if (child.CompareTag("workstation"))
@@ -509,7 +520,6 @@ public class MultiAgentController : MonoBehaviour
                 Workstation temp_w = child.GetComponent<Workstation>();
                 temp_w.EpisodeReset();
             }
-            
         }
 
         cspointer = 0;
@@ -551,6 +561,11 @@ public class MultiAgentController : MonoBehaviour
 
             return (a, stacks);
         }
+    }
+
+    public bool IsEvalDone()
+    {
+        return evalEpisodes >= episodesToEvaluate;
     }
 
     public void AdvanceCustomPointer(int x) 

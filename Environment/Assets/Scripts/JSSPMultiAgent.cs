@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,14 +20,17 @@ public class JSSPMultiAgent : Agent
 
     [Tooltip("Main FAS GameObject Controller")]
     public MultiAgentController controller;
+    
+    [Tooltip("Central FAS information")]
+    public FASinfo info;
 
     public int ID;
 
     [Header("Solvers")]
-    public bool inference = false;
-    public bool manual=false;
-    public bool SPT = false;
-    public bool LPT = false;
+    private bool inference = false;
+    private bool manual = false;
+    private bool SPT = false;
+    private bool LPT = false;
     public bool custom = false;
     private System.Array customSolution;
     private int stacks;
@@ -78,6 +82,18 @@ public class JSSPMultiAgent : Agent
     private Vector3 destination;
     private bool trainingMode;
 
+    // Schedule object
+    public Schedule schedule;
+
+    public void Start()
+    {
+        inference = schedule.inference;
+        manual = schedule.manual;
+        SPT = schedule.SPT;
+        LPT = schedule.LPT;
+        
+    }
+
     public override void Initialize()
     {
         //Initialize
@@ -102,8 +118,8 @@ public class JSSPMultiAgent : Agent
         last_action = 0;
 
         destination = init_pos;
-        customSolution= controller.transform.GetComponent<FASinfo>().customSolution;
-        trainingMode = controller.transform.GetComponent<FASinfo>().trainingMode;
+        customSolution= info.customSolution;
+        trainingMode = schedule.trainingMode;
 
         if (trainingMode)
         {
@@ -116,7 +132,6 @@ public class JSSPMultiAgent : Agent
         
         GetLocations(transform.parent);
         //UnityEngine.Random.InitState(20);
-
         
     }
 
@@ -187,7 +202,7 @@ public class JSSPMultiAgent : Agent
         }
         ResetDecisions();
 
-        if (Dot) { Instantiate(Dot, transform.position, Quaternion.identity); }
+        if (Dot && Time.captureDeltaTime%10000==0 ) { Instantiate(Dot, transform.position, Quaternion.identity); }
 
     }
 
@@ -244,6 +259,50 @@ public class JSSPMultiAgent : Agent
         //Debug.Log(init_pos);
 
     }
+    
+    public override void WriteDiscreteActionMask(IDiscreteActionMask actionMask)
+    {
+        if (schedule.masking)
+        {
+            actionMask.SetActionEnabled(0, 0, true);
+            if (carrying)
+            {
+                for (int i = 1; i < productDictionary.Count; i++)
+                {
+                    product = productDictionary[i];
+                    if (product.product_ID != grabbedID)
+                    {
+                        actionMask.SetActionEnabled(0, i, false);
+                    }
+                }
+                actionMask.SetActionEnabled(0, grabbedID, true);
+            }
+            else
+            {
+                for (int i = 1; i < productDictionary.Count; i++)
+                {
+                    product = productDictionary[i];
+                    if (product.finished || (product.grabbed && !product.processing))
+                    {
+                        actionMask.SetActionEnabled(0, i, false);
+                    }
+                    else
+                    {
+                        actionMask.SetActionEnabled(0, i, true);
+                    }
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < productDictionary.Count; i++)
+            {
+                actionMask.SetActionEnabled(0, i, true);
+            }
+        }
+    }
+    
+
 
     /// <summary>
     /// Called when and action is received from either the player input or the neural network
@@ -252,30 +311,35 @@ public class JSSPMultiAgent : Agent
     {
         
         int action = actionBuffers.DiscreteActions[0];
-        if (!carrying)
+        if (action > 0)
         {
-            if (action > 0)
+            //if (actionBuffers.DiscreteActions[0] != job) { DropProduct(); }
+            var prod = productDictionary[action];
+            job = action;
+            destination = prod.GetDestination(job, inputLocationDictionary, deliveryLocationDictionary);
+            destination.y = init_pos.y;
+
+            if (schedule.pseudoMasking)
             {
-                //if (actionBuffers.DiscreteActions[0] != job) { DropProduct(); }
-                var prod = productDictionary[action];
-                job = action;
-                destination = prod.GetDestination(job, inputLocationDictionary, deliveryLocationDictionary);
-                destination.y = init_pos.y;
-                
-                if (!prod.grabbed || prod.processing) { decided = true; }
-
-                //AddReward(-1f);
-                // FIX 001
-                agent.destination = destination;
-
-
+                if (!prod.grabbed || prod.processing)
+                {
+                    decided = true;
+                }
             }
             else
             {
-                agent.destination = init_pos;
+                decided = true;
             }
-            last_action = action;
+
+            //AddReward(-1f);
+            // FIX 001
+            agent.destination = destination;
         }
+        else
+        {
+            agent.destination = init_pos;
+        }
+        last_action = action;
     }
 
     /// <summary>
@@ -503,9 +567,31 @@ public class JSSPMultiAgent : Agent
                     GrabProduct(product);
                 }
             }
+            if (collider.CompareTag("table"))
+            {
+                TemporalStation temp = collider.transform.GetComponent<TemporalStation>();
+                if (temp.full)
+                {
+                    product = temp.GetProduct();
+                    GrabProduct(product);
+                    temp.full = false;
+                }
+
+            }
         }
         else
         {
+            if (collider.CompareTag("table"))
+            {
+                TemporalStation temp = collider.transform.GetComponent<TemporalStation>();
+
+                if (!temp.full)
+                {
+                    temp.full = true;
+                    product.SetinTable(collider.transform);
+                    decided = false;
+                }
+            }
         }
     }
 
@@ -620,6 +706,10 @@ public class JSSPMultiAgent : Agent
         {
             decided = false;
         }
+        else if (job > 0 && productDictionary[job].finished)
+        {
+            decided = false;
+        }
     }
 
     private void DropProduct()
@@ -632,7 +722,6 @@ public class JSSPMultiAgent : Agent
             temp.y = product.og_position.y;
             product.SetPosition(temp);
             product.grabbed = false;
-
         }
     }
 

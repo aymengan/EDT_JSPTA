@@ -1,0 +1,65 @@
+{
+    "AGV": {
+        "checkpoints": [
+            {
+                "steps": 14249913,
+                "file_path": "results/6x3x2_mask_rand_seed/AGV/AGV-14249913.onnx",
+                "reward": -38.07677799722423,
+                "creation_time": 1722774453.0514033,
+                "auxillary_file_paths": [
+                    "results/6x3x2_mask_rand_seed/AGV/AGV-14249913.pt"
+                ]
+            },
+            {
+                "steps": 14499966,
+                "file_path": "results/6x3x2_mask_rand_seed/AGV/AGV-14499966.onnx",
+                "reward": -35.12993812561035,
+                "creation_time": 1722775556.1626835,
+                "auxillary_file_paths": [
+                    "results/6x3x2_mask_rand_seed/AGV/AGV-14499966.pt"
+                ]
+            },
+            {
+                "steps": 14749916,
+                "file_path": "results/6x3x2_mask_rand_seed/AGV/AGV-14749916.onnx",
+                "reward": -39.253639309905296,
+                "creation_time": 1722776660.4135766,
+                "auxillary_file_paths": [
+                    "results/6x3x2_mask_rand_seed/AGV/AGV-14749916.pt"
+                ]
+            },
+            {
+                "steps": 14999934,
+                "file_path": "results/6x3x2_mask_rand_seed/AGV/AGV-14999934.onnx",
+                "reward": -39.83299070416075,
+                "creation_time": 1722777765.3913121,
+                "auxillary_file_paths": [
+                    "results/6x3x2_mask_rand_seed/AGV/AGV-14999934.pt"
+                ]
+            },
+            {
+                "steps": 15000537,
+                "file_path": "results/6x3x2_mask_rand_seed/AGV/AGV-15000537.onnx",
+                "reward": -40.13083682340734,
+                "creation_time": 1722777765.5745127,
+                "auxillary_file_paths": [
+                    "results/6x3x2_mask_rand_seed/AGV/AGV-15000537.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 15000537,
+            "file_path": "results/6x3x2_mask_rand_seed/AGV.onnx",
+            "reward": -40.13083682340734,
+            "creation_time": 1722777765.5745127,
+            "auxillary_file_paths": [
+                "results/6x3x2_mask_rand_seed/AGV/AGV-15000537.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.0.0",
+        "torch_version": "2.3.1"
+    }
+}

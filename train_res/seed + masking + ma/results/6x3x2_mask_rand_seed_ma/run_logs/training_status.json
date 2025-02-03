@@ -1,0 +1,65 @@
+{
+    "AGV": {
+        "checkpoints": [
+            {
+                "steps": 14249785,
+                "file_path": "results/6x3x2_mask_rand_seed_ma/AGV/AGV-14249785.onnx",
+                "reward": null,
+                "creation_time": 1722743423.3860402,
+                "auxillary_file_paths": [
+                    "results/6x3x2_mask_rand_seed_ma/AGV/AGV-14249785.pt"
+                ]
+            },
+            {
+                "steps": 14499672,
+                "file_path": "results/6x3x2_mask_rand_seed_ma/AGV/AGV-14499672.onnx",
+                "reward": null,
+                "creation_time": 1722744100.8650446,
+                "auxillary_file_paths": [
+                    "results/6x3x2_mask_rand_seed_ma/AGV/AGV-14499672.pt"
+                ]
+            },
+            {
+                "steps": 14749653,
+                "file_path": "results/6x3x2_mask_rand_seed_ma/AGV/AGV-14749653.onnx",
+                "reward": null,
+                "creation_time": 1722744781.5712802,
+                "auxillary_file_paths": [
+                    "results/6x3x2_mask_rand_seed_ma/AGV/AGV-14749653.pt"
+                ]
+            },
+            {
+                "steps": 14999872,
+                "file_path": "results/6x3x2_mask_rand_seed_ma/AGV/AGV-14999872.onnx",
+                "reward": null,
+                "creation_time": 1722745493.3291566,
+                "auxillary_file_paths": [
+                    "results/6x3x2_mask_rand_seed_ma/AGV/AGV-14999872.pt"
+                ]
+            },
+            {
+                "steps": 15000872,
+                "file_path": "results/6x3x2_mask_rand_seed_ma/AGV/AGV-15000872.onnx",
+                "reward": null,
+                "creation_time": 1722745493.5565412,
+                "auxillary_file_paths": [
+                    "results/6x3x2_mask_rand_seed_ma/AGV/AGV-15000872.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 15000872,
+            "file_path": "results/6x3x2_mask_rand_seed_ma/AGV.onnx",
+            "reward": null,
+            "creation_time": 1722745493.5565412,
+            "auxillary_file_paths": [
+                "results/6x3x2_mask_rand_seed_ma/AGV/AGV-15000872.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.0.0",
+        "torch_version": "2.3.1"
+    }
+}

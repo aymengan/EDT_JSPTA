@@ -5,13 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Training Multi Allocator.unity
-    guid: 0e44855017c00864784521ee6d2a1817
-  - enabled: 0
-    path: Assets/Scenes/Allocator Training.unity
-    guid: dd7f4d8a4b36d874cbddebbda5d491b0
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/6x3x2_T.unity
-    guid: 853cacfa30206594db4f9a4de5eb5706
+    guid: faf9bc77eee73164eb9e1bb1032ab408
   m_configObjects: {}

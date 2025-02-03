@@ -1,21 +1,23 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.MLAgents;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 public class Product : MonoBehaviour
 {   
     // Colors
     private List<Color> color_list;
     public int product_ID = 0;
-    private int jobSeed;
-    private int machineSeed;
+    public bool randomJob;
 
     [Tooltip("Ordered list of tasks to complete job. x: task, y: processing time. Add delivery station at the end with a negative ID at x")]
     public List<Vector2> job;
 
     [HideInInspector]
-    // The pointer to the next operation that needs to be performed
     public int task_pointer = 0;
     private Material product_material;
     public bool processing= false;
@@ -27,10 +29,9 @@ public class Product : MonoBehaviour
     // Times of Completion
     public List<float> times;
 
-    // Currently used workstation on a product (collider and script object)
+    // Workstations
     private Collider used_w;
     private Workstation workstation;
-    
     private Vector3 outputPosition;
 
     [HideInInspector]
@@ -38,71 +39,59 @@ public class Product : MonoBehaviour
 
     // Initial Parameters
     [HideInInspector]
-    // A product can have a workstation, AGV or delivery station as a parent
-    // The initial parent of a product at the beginning of an epsiode
     public Transform og_parent;
     [HideInInspector]
-    // The initial position of a product at the beginning of an epsiode
     public Vector3 og_position;
-    // Time as a float value indicating when an episode started
     private float episodeStart;
 
-    // Indicates whether a product is currently grabbed by a robot
     public bool grabbed= false;
 
     [HideInInspector]
-    // Only used for SPT, LPT heuristics. Indicates whether a product has been already assigned to a workstation
-    // and robot
     public bool assigned = false;
 
-    [Header("Number of Workstations")]
+    [Header("Debug")]
     private int Nw;
+    private float ogTimeScale;
     
     private void Awake()
     {
-        // Initialize
-        processing = false;
-        outputPosition = new Vector3();
         og_parent = transform.parent;
         og_position = transform.position;
-        episodeStart = Time.time;
-        finished = false;
 
         // Get Coloring List and Change Color
         FASinfo info = transform.parent.GetComponent<FASinfo>();
         color_list = info.color_list;
         Nw = info.Nw;
-        jobSeed = info.jobSeed;
-        machineSeed = info.machineSeed;
 
-        // Generate job
-        UnityEngine.Random.InitState(jobSeed);
-        job = new List<Vector2>();
-        GenerateJob();
-
-
-        //origin = info.Origin.position;
+        randomJob = info.schedule.randomJob;
+        
         MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
         product_material = meshRenderer.material;
-        ChangeColor(product_material, color_list[(int)job[task_pointer][0]]);
+
+        ogTimeScale = Time.timeScale;
+        
+        int newJobSeed;
+        int newMachineSeed;
+        (newJobSeed, newMachineSeed) = info.GetSeeds();
+        EpisodeReset(newJobSeed, newMachineSeed);
     }
 
 
-    private void GenerateJob()
+    private void GenerateJob(int jobSeed, int machineSeed)
     {
-        // Generate processing times for each job in the range [1, 10] for each operation
-        // number of operations == number of workstations
+        
+        Random.State previousState = Random.state;
+        UnityEngine.Random.InitState(jobSeed);
         for(int i = 0; i < Nw; i++)
         {
-            // Ensure disjunctive processing times for each operation of each job
             for (int j = 0; j < product_ID*Nw; j++) { float _ = UnityEngine.Random.Range(1, 10); }
             float t = UnityEngine.Random.Range(1f, 10f);
-            // Product IDs are in {1, ..., n} where n is the number of products
             job.Add(new Vector2(i + 1f, t));
         }
-        
-        // Generate random permutations of 
+
+
         UnityEngine.Random.InitState(machineSeed);
+        
         List<Vector2> temp_list = new List<Vector2>(job);
         for(int i = 0; i< temp_list.Count; i++)
         {
@@ -113,18 +102,11 @@ public class Product : MonoBehaviour
             temp_list = new List<Vector2> (job);
         }
 
-
+        Random.state = previousState;
         // Add delivery stations
         job.Add(new Vector2(-1, 0));
     }
-
-    private void Start()
-    {
-        for (int i = 0; i < job.Count; i++)
-        {
-            times.Add(-1f);
-        }
-    }
+    
 
     // Update is called once per frame
     void Update()
@@ -239,8 +221,21 @@ public class Product : MonoBehaviour
         transform.parent = parent;
     }
 
-    public void EpisodeReset()
+    public void SetinTable(Transform table)
     {
+        SetParent(table);
+        SetPosition(table.gameObject.GetComponent<TemporalStation>().load.position);
+    }
+
+    public void EpisodeReset(int newJobSeed, int newMachineSeed)
+    {
+        if (randomJob || job.Count == 0)
+        {
+            job = new List<Vector2>();
+            GenerateJob(newJobSeed, newMachineSeed);
+        }
+
+
         task_pointer = 0;
         processing = false;
         times = new List<float>();
