@@ -285,7 +285,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6090320633563012816, guid: 1c9eb96cc0c3a10488633432c8c3f74a, type: 3}
       propertyPath: masking
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090320633563012816, guid: 1c9eb96cc0c3a10488633432c8c3f74a, type: 3}
+      propertyPath: inference
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6090320633563012816, guid: 1c9eb96cc0c3a10488633432c8c3f74a, type: 3}
       propertyPath: printJobs
@@ -296,8 +300,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6090320633563012816, guid: 1c9eb96cc0c3a10488633432c8c3f74a, type: 3}
+      propertyPath: pseudoMasking
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090320633563012816, guid: 1c9eb96cc0c3a10488633432c8c3f74a, type: 3}
       propertyPath: episodesToEvaluate
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6090320633563012817, guid: 1c9eb96cc0c3a10488633432c8c3f74a, type: 3}
       propertyPath: m_RootOrder

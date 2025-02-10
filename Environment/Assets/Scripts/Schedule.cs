@@ -26,8 +26,6 @@ public class Schedule : MonoBehaviour
     public bool maTrainer;
     public bool printJobs;
     public bool printMakespan;
-    public bool pseudoMasking;
-
     
 
     public int episodesToEvaluate;

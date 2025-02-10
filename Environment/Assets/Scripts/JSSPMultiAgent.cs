@@ -319,7 +319,7 @@ public class JSSPMultiAgent : Agent
             destination = prod.GetDestination(job, inputLocationDictionary, deliveryLocationDictionary);
             destination.y = init_pos.y;
 
-            if (schedule.pseudoMasking)
+            if (!schedule.masking)
             {
                 if (!prod.grabbed || prod.processing)
                 {
